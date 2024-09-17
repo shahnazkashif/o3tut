@@ -1,6 +1,6 @@
 //import npm module
 const { format } = require('date-fns');
-const {v4: uuid} = require('uuid');
+const { v4: uuid} = require('uuid');
 
 //import common core module
 const fs = require('fs');
@@ -14,17 +14,24 @@ const logEvents = async (message, logName) => {
     console.log(logItem);
     try {
 
-        if (!fs.existsSync(path.join(__dirname, 'log')))
+        if (!fs.existsSync(path.join(__dirname, '..',  'logs')))
         {
-            await fsPromises.mkdir(path.join(__dirname, 'log'));
+            await fsPromises.mkdir(path.join(__dirname, '..', 'logs'));
         }
-        await fsPromises.appendFile(path.join(__dirname, 'log', logName), logItem);
+        await fsPromises.appendFile(path.join(__dirname, '..', 'logs', logName), logItem);
     } catch (err) {
         console.log(err);
     }
 }
 
-module.exports = logEvents;
+const logger = (req, res, next) => {
+    //logevents parameter description: request then from where the request coming from e.g. any website name and then what url is requested
+    logEvents(`${req.method}\t${req.headers.origin}\t${req.url}`, 'reqLog.txt');
+    console.log(`${req.method} ${req.path}`);
+    next();
+}
+
+module.exports = { logger, logEvents };
 
 // console.log(format (new Date(), 'yyyyMMdd\tHH:mm:ss'))
 // console.log(uuid())

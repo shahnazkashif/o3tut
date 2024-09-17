@@ -1,0 +1,16 @@
+20240822GMT+1	23:16:14	199af5cd-a44f-4c08-a86e-3dbe44ed5232	TypeError: fsPromises.readFil is not a function
+20240831GMT+1	23:03:21	f3833728-2c06-48d4-aab7-9a6544eee11a	$(err.name): $(err.message)
+20240831GMT+1	23:05:23	17848f2b-bd04-4e07-9eba-d398c9a4b8be	$(err.name): $(err.message)
+20240831GMT+1	23:10:05	e8363fbc-56c3-44fd-8d9d-5c34b27f5347	Error: Not allowed by CORS
+20240902GMT+1	15:58:18	a34ae76d-78b9-4c8c-94b2-a7ca5718d85f	TypeError: data.setEmployees is not a function
+20240909GMT+1	11:48:44	944ca470-3b2a-4c61-98d9-1cc940abdb23	ReferenceError: user is not defined
+20240909GMT+1	11:48:46	7c8f344e-360e-45fe-b65c-df5773743b83	ReferenceError: user is not defined
+20240909GMT+1	11:49:39	653a2476-7d81-4fe1-a47f-9bd03c58c69d	ReferenceError: user is not defined
+20240909GMT+1	11:49:42	c7281a93-0a4e-4e03-a021-7d79f405ce33	ReferenceError: user is not defined
+20240909GMT+1	11:52:11	b31008f7-5826-498c-ac40-6f0935ff2489	ReferenceError: user is not defined
+20240909GMT+1	11:54:47	a694f38c-ddb7-4345-bc86-e8e87ec0f304	ReferenceError: user is not defined
+20240909GMT+1	11:54:49	fc33dffb-a749-471e-bfd0-adf633dc524b	ReferenceError: user is not defined
+20240909GMT+1	11:55:03	6c79ca23-e8aa-4ba8-a978-adafcc07927e	ReferenceError: user is not defined
+20240909GMT+1	11:55:04	041ba575-b248-470c-b933-29a7d8649966	ReferenceError: user is not defined
+20240911GMT+1	22:26:49	e591942f-9610-4486-a880-38d93f84ccf7	ReferenceError: whitelist is not defined
+20240917GMT+1	21:12:37	72771882-819b-4e23-b17d-63ccd395797f	SyntaxError: Expected ',' or '}' after property value in JSON at position 11 (line 1 column 12)
